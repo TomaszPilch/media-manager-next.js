@@ -9,9 +9,15 @@ yarn add media-manager-next
 
 ## Demo
 
+![demo 1](./examples/img1.png)
+
+![demo 2](./examples/img2.png)
+
 ## Usage
 
-1. Add these environment variables
+Follow these steps.
+
+### Add these environment variables
 
 | name                              | description                                                        |
 |-----------------------------------|--------------------------------------------------------------------|
@@ -21,7 +27,7 @@ yarn add media-manager-next
 | `PUBLIC_IMAGE_UPLOAD_FOLDER_PROD` | production folder                                                  |
 | `GOOGLE_APPLICATION_CREDENTIALS`  | https://cloud.google.com/docs/authentication/getting-started?hl=en |
 
-2. Create Next.js api endpoints (examples with prisma, you can use another ORM)
+### Create Next.js api endpoints (examples with prisma, you can use another ORM)
 
 file `pages/api/media/[...media].ts`
 ```
@@ -115,7 +121,7 @@ export default async function mediaClient(req, res) {
 }
 ```
 
-3. Add translations to your i18n lib
+### Add translations to your i18n lib
 
 ```
 {
@@ -145,7 +151,7 @@ export default async function mediaClient(req, res) {
 }
 ```
 
-4. Use media manager
+### Use media manager
 
 ```
 {open && (
@@ -159,8 +165,7 @@ export default async function mediaClient(req, res) {
     />
 )}
 ```
-
-5. `<MediaItemForm />` component
+### `<MediaItemForm />` component
 
    - create your custom form for editing media properties
    - MediaManager pass `data`, `t` and `onChange` props to your form

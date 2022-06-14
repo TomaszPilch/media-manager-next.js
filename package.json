@@ -1,6 +1,6 @@
 {
   "name": "media-manager-next",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple media manager to use it for uploading and managing resources (images, files, etc.). It uses MUI material design theme.",
   "main": "lib/MediaManager.js",
   "repository": "git@github.com:TomaszPilch/media-manager-next.js.git",
@@ -11,6 +11,13 @@
     "build": "tsc -p tsconfig.json",
     "publish:package": "yarn publish --access public"
   },
+  "files": [
+    "lib/*",
+    "package.json",
+    "readme.md",
+    "yarn.lock",
+    "LICENSE"
+  ],
   "peerDependencies": {
     "react": "^16.0.0 || ^17.0.0 || ^18.0.0"
   },
