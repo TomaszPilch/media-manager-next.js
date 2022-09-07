@@ -11,7 +11,14 @@ type MediaUploadActionPropsT = {
 const MediaUploadAction = ({ updateList, t }: MediaUploadActionPropsT) => {
   return (
     <div className="text-end pt-3">
-      <FilePond server="/api/media/upload" labelIdle={t('rightBar.chooseFiles')} onupdatefiles={() => updateList()} />
+      <FilePond
+        server="/api/media/upload"
+        labelIdle={t('rightBar.chooseFiles')}
+        onprocessfiles={() => updateList()}
+        allowReplace={false}
+        allowRevert={false}
+        allowProcess={false}
+      />
     </div>
   )
 }
