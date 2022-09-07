@@ -26,6 +26,7 @@ Follow these steps.
 | `PUBLIC_IMAGE_UPLOAD_FOLDER_DEV`  | folder for dev testing                                             |
 | `PUBLIC_IMAGE_UPLOAD_FOLDER_PROD` | production folder                                                  |
 | `GOOGLE_APPLICATION_CREDENTIALS`  | https://cloud.google.com/docs/authentication/getting-started?hl=en |
+| `PUBLIC_BUCKET_STORAGE`           | bucket name                                                        |
 
 ### Create Next.js api endpoints (examples with prisma, you can use another ORM)
 

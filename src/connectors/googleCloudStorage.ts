@@ -11,6 +11,7 @@ const production = process.env.APP_ENV === 'production'
 const storageBucketUrl = process.env.STORAGE_BUCKET_URL
 const devFolder = process.env.PUBLIC_IMAGE_UPLOAD_FOLDER_DEV || 'dev/media'
 const prodFolder = process.env.PUBLIC_IMAGE_UPLOAD_FOLDER_PROD || 'media'
+const bucketStorage = process.env.PUBLIC_BUCKET_STORAGE || ''
 const uploadFolder = production ? prodFolder : devFolder
 
 export type MediaUploadOptions = {
@@ -20,7 +21,7 @@ export type MediaUploadOptions = {
 
 export const deleteFileFromBucket = (id: number | string, url: string, { onMediaDelete }: MediaUploadOptions) =>
   new Promise((resolve, reject) => {
-    const bucket = new Storage().bucket('tomasz-codes')
+    const bucket = new Storage().bucket(bucketStorage)
     return bucket
       .file(url.replace(`${storageBucketUrl}/`, ''))
       .delete()
@@ -39,7 +40,7 @@ const uploadFileToBucket = (files: Files, { onMediaUpload }: MediaUploadOptions)
         if (mimetype && mimetype.includes('image/')) {
           dimensions = sizeOf(filepath)
         }
-        const bucket = new Storage().bucket('tomasz-codes')
+        const bucket = new Storage().bucket(bucketStorage)
         const fileName = `${uploadFolder}/${newFilename}`
         const file = bucket.file(fileName)
         const data = fs.readFileSync(filepath)
