@@ -76,7 +76,7 @@ const post = (req: NextApiRequest, options: MediaUploadOptions) =>
       if (err) {
         return reject(err)
       }
-      return uploadFileToBucket(files, options).then(resolve).catch(reject)
+      return uploadFileToBucket({ file: files.filepond }, options).then(resolve).catch(reject)
     })
   })
 

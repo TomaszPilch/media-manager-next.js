@@ -1440,11 +1440,6 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
   integrity sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==
 
-"@transloadit/prettier-bytes@0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@transloadit/prettier-bytes/-/prettier-bytes-0.0.9.tgz#8d3146f75fd9d3c544cb63ec7dbdeb6670d3e2d7"
-  integrity sha512-pCvdmea/F3Tn4hAtHqNXmjcixSaroJJ+L3STXlYJdir1g1m2mRQpWbN8a4SvgQtaw2930Ckhdx8qXdXBFMKbAA==
-
 "@types/formidable@^2.0.5":
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/@types/formidable/-/formidable-2.0.5.tgz#e54e31d242ef750ac2d05aa163fa0274c8e6ef9c"
@@ -1647,57 +1642,6 @@
   dependencies:
     "@typescript-eslint/types" "5.28.0"
     eslint-visitor-keys "^3.3.0"
-
-"@uppy/companion-client@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@uppy/companion-client/-/companion-client-3.0.1.tgz#bb09fd737e1e83fdfad8abb6ecebc6080060638a"
-  integrity sha512-7ZhdhdbhzOpcUGanQBrLgoVHKvj5KSSwVjaqj1OgpFuiTGh1HRBQlQsM4w6aZR2gLJfEOPdUcm0LquZvrZ3fNw==
-  dependencies:
-    "@uppy/utils" "^5.0.1"
-    namespace-emitter "^2.0.1"
-
-"@uppy/core@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@uppy/core/-/core-3.0.1.tgz#a5482a04f62ca52a0b66b12f72f25cd3f8fabe40"
-  integrity sha512-iDCpiiFxv0QQL7vTe8LmkdN8hD7CkZ6Xk0uKcXSS6hOSScZgshTqHjUnI3aTet63Mxq0wGBargjj917oe9+9IQ==
-  dependencies:
-    "@transloadit/prettier-bytes" "0.0.9"
-    "@uppy/store-default" "^3.0.1"
-    "@uppy/utils" "^5.0.1"
-    lodash.throttle "^4.1.1"
-    mime-match "^1.0.2"
-    namespace-emitter "^2.0.1"
-    nanoid "^4.0.0"
-    preact "^10.5.13"
-
-"@uppy/react@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@uppy/react/-/react-3.0.1.tgz#da2f6ca4ca7180c5877c6aefecd6f274b991515d"
-  integrity sha512-BW+ci78Kk6tT0vdU70GUE38363pulsP0GTTEc3pRxgV8jVLo+4KlbJB+pu1uGG24iRT1be0bFHoQ07PSB6FFVw==
-  dependencies:
-    "@uppy/utils" "^5.0.1"
-    prop-types "^15.6.1"
-
-"@uppy/store-default@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@uppy/store-default/-/store-default-3.0.1.tgz#2f82567d5ac448bfef1a3bd90e850517b720f817"
-  integrity sha512-igsRSxGEZ9Yh2kQ7OpgOdE4eaC3yZSv2lj+dtlV7FOZVbTdC18ihvOXNYi3NtENAv05pVh5wSkF7nccuTe5bOA==
-
-"@uppy/utils@^5.0.1":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@uppy/utils/-/utils-5.0.1.tgz#65ce1ad981a0af2596ff8ce1158986d110b776e0"
-  integrity sha512-pPcNTDGlH6+P6VFwBY+jTTNeYPi6pYhv6Om4NvRqrlEk1zdWbAOh0OluKfmeslj8IveL4mOhalcPh3K9Ys4N8g==
-  dependencies:
-    lodash.throttle "^4.1.1"
-
-"@uppy/xhr-upload@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@uppy/xhr-upload/-/xhr-upload-3.0.1.tgz#5e3485c222f0f49b755018b17e77d72358daf539"
-  integrity sha512-zrK0riBPk/708ClgRtEyOwhvnA/RsQPJf6QrTmeojXH/9SZ7Lhqogg9JvN7hyyoe1HLCNP3K14r42Mc9xu7rlw==
-  dependencies:
-    "@uppy/companion-client" "^3.0.1"
-    "@uppy/utils" "^5.0.1"
-    nanoid "^4.0.0"
 
 abort-controller@^3.0.0:
   version "3.0.0"
@@ -2554,6 +2498,11 @@ file-entry-cache@^6.0.1:
   dependencies:
     flat-cache "^3.0.4"
 
+filepond@^4.30.4:
+  version "4.30.4"
+  resolved "https://registry.yarnpkg.com/filepond/-/filepond-4.30.4.tgz#036d87d9b0ab27d19fb5e302eae799df90e094e4"
+  integrity sha512-FCwsMvG9iiEs6uobdDrTaKsCgsqys0NuLgPPD8n37AYVYBiiDkrPkk9MSIU5rT2FahYcL1bScYI9huIPtlzqyA==
+
 fill-range@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/fill-range/-/fill-range-7.0.1.tgz#1919a6a7c75fe38b2c7c77e5198535da9acdda40"
@@ -3147,11 +3096,6 @@ lodash.merge@^4.6.2:
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
-lodash.throttle@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
-  integrity sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==
-
 loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
@@ -3183,13 +3127,6 @@ mime-db@1.52.0, "mime-db@>= 1.43.0 < 2":
   version "1.52.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.52.0.tgz#bbabcdc02859f4987301c856e3387ce5ec43bf70"
   integrity sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==
-
-mime-match@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/mime-match/-/mime-match-1.0.2.tgz#3f87c31e9af1a5fd485fb9db134428b23bbb7ba8"
-  integrity sha512-VXp/ugGDVh3eCLOBCiHZMYWQaTNUHv2IJrut+yXA6+JbLPXHglHwfS/5A5L0ll+jkCY7fIzRJcH6OIunF+c6Cg==
-  dependencies:
-    wildcard "^1.1.0"
 
 mime-types@^2.0.8, mime-types@^2.1.12:
   version "2.1.35"
@@ -3235,20 +3172,10 @@ ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
 
-namespace-emitter@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/namespace-emitter/-/namespace-emitter-2.0.1.tgz#978d51361c61313b4e6b8cf6f3853d08dfa2b17c"
-  integrity sha512-N/sMKHniSDJBjfrkbS/tpkPj4RAbvW3mr8UAzvlMHyun93XEm83IAvhWtJVHo+RHn/oO8Job5YN4b+wRjSVp5g==
-
 nanoid@^3.1.30:
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.4.tgz#730b67e3cd09e2deacf03c027c81c9d9dbc5e8ab"
   integrity sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==
-
-nanoid@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-4.0.0.tgz#6e144dee117609232c3f415c34b0e550e64999a5"
-  integrity sha512-IgBP8piMxe/gf73RTQx7hmnhwz0aaEXYakvqZyE302IXW3HyVNhdNGC+O2MwMAVhLEnvXlvKtGbtJf6wvHihCg==
 
 natural-compare@^1.4.0:
   version "1.4.0"
@@ -3461,11 +3388,6 @@ postcss@8.4.5:
     picocolors "^1.0.0"
     source-map-js "^1.0.1"
 
-preact@^10.5.13:
-  version "10.7.3"
-  resolved "https://registry.yarnpkg.com/preact/-/preact-10.7.3.tgz#f98c09a29cb8dbb22e5fc824a1edcc377fc42b5a"
-  integrity sha512-giqJXP8VbtA1tyGa3f1n9wiN7PrHtONrDyE3T+ifjr/tTkg+2N4d/6sjC9WyJKv8wM7rOYDveqy5ZoFmYlwo4w==
-
 prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
@@ -3483,7 +3405,7 @@ prettier@^2.6.2:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.7.0.tgz#a4fdae07e5596c51c9857ea676cd41a0163879d6"
   integrity sha512-nwoX4GMFgxoPC6diHvSwmK/4yU8FFH3V8XWtLQrbj4IBsK2pkYhG4kf/ljF/haaZ/aii+wNJqISrCDPgxGWDVQ==
 
-prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.8.1:
+prop-types@^15.6.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -3526,6 +3448,11 @@ react-dom@^18.2.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-filepond@^7.1.2:
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/react-filepond/-/react-filepond-7.1.2.tgz#8f04d06396a59b5980dda479c095ed23e6d1f68b"
+  integrity sha512-vrlx9o/n+jGikh6jLey+PpUGYtEZn8MdeB6JFeX/5/N/Mu75IHG+MFQbv8R27bNXvS41mDtV9Fo5DG+s6siVIA==
 
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
@@ -4027,11 +3954,6 @@ which@^2.0.1:
   integrity sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
   dependencies:
     isexe "^2.0.0"
-
-wildcard@^1.1.0:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/wildcard/-/wildcard-1.1.2.tgz#a7020453084d8cd2efe70ba9d3696263de1710a5"
-  integrity sha512-DXukZJxpHA8LuotRwL0pP1+rS6CS7FF2qStDDE1C7DDg2rLud2PXRMuEDYIPhgEezwnlHNL4c+N6MfMTjCGTng==
 
 word-wrap@^1.2.3:
   version "1.2.3"

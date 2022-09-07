@@ -1,6 +1,6 @@
 {
   "name": "media-manager-next",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "keywords": [
     "react",
     "material-design",
@@ -64,15 +64,14 @@
     "@google-cloud/storage": "^6.4.2",
     "@mui/icons-material": "^5.10.3",
     "@mui/material": "^5.10.4",
-    "@uppy/core": "^3.0.1",
-    "@uppy/react": "^3.0.1",
-    "@uppy/xhr-upload": "^3.0.1",
     "axios": "^0.27.2",
     "axios-hooks": "^3.1.5",
+    "filepond": "^4.30.4",
     "formidable": "^2.0.1",
     "image-size": "^1.0.2",
     "moment": "^2.29.4",
     "ramda": "^0.28.0",
+    "react-filepond": "^7.1.2",
     "uuid": "^9.0.0"
   }
 }
