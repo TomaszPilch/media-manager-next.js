@@ -26,7 +26,6 @@ const MediaUploadAction = ({ updateList, t }: MediaUploadActionPropsT) => {
         timeout: 60 * 1000,
       })
       .on('complete', () => {
-        uppy.reset()
         updateList()
       }),
   )
